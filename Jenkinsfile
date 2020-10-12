@@ -28,7 +28,7 @@ pipeline {
         success {
             echo "This will be executed only when all stages succeed"
             junit '**/*xml'
-           jacoco exclusionPattern: 'jacoco exclusionPattern: '**/*Test.TestCalculateService', inclusionPattern: '**/*.MathService''
+           jacoco exclusionPattern:  '**/*Test.TestCalculateService', inclusionPattern: '**/*.MathService'
 
         }
         failure {
